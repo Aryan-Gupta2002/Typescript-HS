@@ -30,3 +30,11 @@ function check(age:number){
     }
 }
 check(age);
+
+function delayedFunc(fn:()=>void){
+    setTimeout(fn,3000);
+}
+
+delayedFunc(function func(){
+    console.log("hello");
+})

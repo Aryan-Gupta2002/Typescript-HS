@@ -28,4 +28,10 @@ function check(age) {
     }
 }
 check(age);
+function delayedFunc(fn) {
+    setTimeout(fn, 3000);
+}
+delayedFunc(function func() {
+    console.log("hello");
+});
 //# sourceMappingURL=index.js.map

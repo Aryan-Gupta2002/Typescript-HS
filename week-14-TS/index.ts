@@ -31,10 +31,10 @@ function check(age:number){
 }
 check(age);
 
-function delayedFunc(fn:()=>void){
+function delayedFunc(fn:()=>void | ((a:string)=> void)){
     setTimeout(fn,3000);
 }
-
-delayedFunc(function func(){
+function func(){
     console.log("hello");
-})
+}
+delayedFunc(()=> greet(name));

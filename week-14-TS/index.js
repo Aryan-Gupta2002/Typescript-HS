@@ -31,7 +31,8 @@ check(age);
 function delayedFunc(fn) {
     setTimeout(fn, 3000);
 }
-delayedFunc(function func() {
+function func() {
     console.log("hello");
-});
+}
+delayedFunc(() => greet(name));
 //# sourceMappingURL=index.js.map

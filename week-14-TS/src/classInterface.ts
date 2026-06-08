@@ -21,10 +21,8 @@ interface Person{
 }
 
 class Manager implements Person{
-    name: string;
-    age: number;
     phn:number;
-    constructor(name:string,age:number,phn:number){
+    constructor(public name:string,public age:number,phn:number){
         this.name = name;
         this.age= age;
         this.phn = phn;

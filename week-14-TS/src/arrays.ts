@@ -36,3 +36,14 @@ let user2:LegalUserOrNot={
     name: "Act",
     age:18
 }
+function isLegal(user:LegalUserOrNot[]){
+    let ans = [];
+    for(let i =0;i<user.length;i++){
+        if(user[i]!.age>=18){
+            ans.push(user[i]);
+        }
+    }
+    return ans;
+}
+const res = isLegal([user2]);
+console.log(res);

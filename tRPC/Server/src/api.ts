@@ -10,7 +10,7 @@ const appRouter = t.router({
     console.log("Hello Console");
     return "Hi returning";
   }),
-  logToServer: t.procedure
+  logServer: t.procedure
     .input((v) => {
       if (typeof v === "string") return v;
       throw new Error("Invalid Input: Expected a string");
